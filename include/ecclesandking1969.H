@@ -9,12 +9,21 @@
 #ifndef _ECCLESANDKING1969_H_
 #define _ECCLESANDKING1969_H_
 
+#include <math.h>
+
 class ECCLESANDKING1969{
 public:
   ECCLESANDKING1969();
   ~ECCLESANDKING1969();
-private:
   double getDensity(double phim);
+private:
+  double a1;
+  double b1;
+  double c1;
+  double a2;
+  double b2;
+  double c2;
+  double k;
 };
 
 #endif

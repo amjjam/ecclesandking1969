@@ -10,7 +10,7 @@
 /*=============================================================================
   ECCLESANDKING1969() - constructor
   ============================================================================*/
-ECCLESANDKING1969::ECLLESANDKING1969{
+ECCLESANDKING1969::ECCLESANDKING1969(){
   a1=12.55e5;
   b1=8.35;
   c1=7.99;
@@ -31,11 +31,12 @@ ECCLESANDKING1969::~ECCLESANDKING1969(){
 
 /*=============================================================================
   double getDensity(double phim) - return density in electrons per cm^-3
+
+  double phim - magnetic latitude in degrees
   ============================================================================*/
 double ECCLESANDKING1969::getDensity(double phim){
-  double dphi1=phim-b1;
-  double dphi2=phim-b2;
+  double dphi1=(phim-b1);
+  double dphi2=(phim+b2);
   return a1/k*exp(-dphi1*dphi1/c1/c1)+a2/k*exp(-dphi2*dphi2/c2/c2);
 }
-
 
