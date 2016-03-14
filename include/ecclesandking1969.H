@@ -13,8 +13,9 @@
 
 class ECCLESANDKING1969{
 public:
-  ECCLESANDKING1969();
+  ECCLESANDKING1969(double A=12.55e5, double B=0);
   ~ECCLESANDKING1969();
+  void setParams(double A, double B);
   double getDensity(double phim);
 private:
   double a1;
@@ -24,6 +25,7 @@ private:
   double b2;
   double c2;
   double k;
+  double d;
 };
 
 #endif
